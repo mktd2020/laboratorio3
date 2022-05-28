@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Producción en clase: Pixar</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/logo.png" alt="Logo Pixar">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="sinopsis.html">Sinopsis</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article class="principal">
+            <div>
+                <img src="images/light_home_logo.png" alt="Lightyear logo">
+                <h2>La historia del origen de Buzz Lightyear y sus aventuras hasta el infinito y más allá.</h2>
+            </div>
+            </article>
+        <article class="secundario">
+            <form action="enviar-formulario.php" method="post"><label>Nombre:</label>
+                <input maxlength="50" name="nombre" required size="50" type="text" autofocus placeholder="Escribe tu nombre" /><label>Email:</label>
+                <input name="email" required type="email" placeholder="Escribe tu email" />
+                <label>Teléfono</label>
+                <input name="telefono" pattern="[0-9]{9}" required type="tel" placeholder="XXXXXXXXX" />
+                <label>Tu web:</label>
+                <input name="tu-url" type="url" placeholder="www.miweb.com" />
+                <label form="cars">Seleccionar navegador:</label>
+                <select name="navegador" required>
+                <option value="Chrome">Chrome</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Edge">Edge</option>
+                </select>
+                <label>Aficiones:</label>
+                <input list="aficiones" type="text" />
+                <datalist id="aficiones">
+                <option value="Viajar"></option>
+                <option value="Leer"></option></datalist>
+                <label>Rango:</label>
+                <input max="20" min="5" type="range" />
+                <label>Selecciona tu color favorito:</label>
+                <input name="color-favorito" type="color" />
+                <label>Fecha:</label>
+                <input name="fecha" type="date" />
+                <label>Hora:</label>
+                <input type="time" name="hora">
+                <textarea cols="80" name="observaciones" rows="8">
+                Puedes escribir aquí tus observaciones...</textarea>
+                <input type="submit" value="Enviar" />
+                </form>
+        </article>
+    </section>
+    <footer>
+        <img src="images/redes/facebook.png" alt="Facebook">
+        <img src="images/redes/twitter.png" alt="Twitter">
+        <img src="images/redes/youtube.png" alt="Youtube">
+        <img src="images/redes/instagram.png" alt="Instagram">
+    </footer>
+</body>
+</html>
