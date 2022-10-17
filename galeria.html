@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
     <title>Producción en clase: Pixar</title>
 </head>
 <body>
@@ -31,38 +32,17 @@
                 <h2>La historia del origen de Buzz Lightyear y sus aventuras hasta el infinito y más allá.</h2>
             </div>
             </article>
-        <h1>Contacto Pixar</h1>
-        <article class="contacto_izquierda">
-            <form action="/my-handling-form-page" method="post">
-         <ul>
-          <li>
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="user_name">
-          </li>
-          <li>
-            <label for="mail">Correo electrónico:</label>
-            <input type="email" id="mail" name="user_mail">
-          </li>
-          <li>
-            <label for="msg">Mensaje:</label>
-            <textarea id="msg" name="user_message"></textarea>
-          </li>
-          <li>
-          <button type="submit">Envíe su mensaje</button>
-            </li>
-         </ul>
-        </form>
+        <h1>Galería Pixar</h1>
+        <article class="galeria">
+            <a href="images/galeria/AnillosPoder.jpg" data-lightbox="galeria" data-title="Título de la serie"><img src="images/galeria/AnillosPoder.jpg" height="150px"></a>
+            <a href="images/galeria/golum.jpg" data-lightbox="galeria" data-title="Foto Golum"><img src="images/galeria/golum.jpg" height="150px"></a>
+            <a href="images/galeria/RINGS5.jpg" data-lightbox="galeria" data-title="Elfos"><img src="images/galeria/RINGS5.jpg" height="150px"></a>
         </article>
-        <article class="contacto_derecha">
-            <img src="images/contacto.png">
-        </article>
-    </section>
-    <hr style="clear: both;" />
     <footer>
         <img src="images/redes/facebook.png" alt="Facebook">
         <img src="images/redes/twitter.png" alt="Twitter">
         <img src="images/redes/youtube.png" alt="Youtube">
-        <img src="images/redes/instagram.png" alt="Instagram">
+        <img src="images/redes/instagram.png" alt="Instagram">    
     </footer>
     <script type="text/javascript">
         function myFunction() {
@@ -75,5 +55,6 @@
 }
 
     </script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>

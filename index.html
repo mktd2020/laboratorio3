@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <title>Producción en clase: Pixar</title>
 </head>
 <body>
@@ -12,10 +14,10 @@
         <div>
             <a href="index.html"><img src="images/logo.png" alt="Logo Pixar"></a>
         </div>
-        <nav>
+        <nav id="navegador">
+           <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="sinopsis.html">Sinopsis</a></li>
                 <li><a href="personajes.html">Personajes</a></li>
                 <li><a href="galeria.html">Galería</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -29,6 +31,15 @@
                 <h2>La historia del origen de Buzz Lightyear y sus aventuras hasta el infinito y más allá.</h2>
             </div>
             </article>
+        <h1>Proyectos Pixar</h1>
+        <p>
+            <strong>Pixar Animation Studios</strong>, más conocido como Pixar, es un estudio cinematográfico de animación por computadora subsidario de <em>Walt Disney Studios</em> y propiedad de The Walt Disney Company con sede en Emeryville, Estados Unidos.
+             Su origen se remonta a 1979, cuando comenzó a operar como The Graphics Group, la división computacional de <strong>Lucasfilm</strong>.Casi una década después fue adquirida por Steve Jobs, que además invirtió en su capital para establecerla como una empresa independiente de animación.
+        </p>
+        <p>
+             En 1995 Pixar produjo <strong>Toy Story</strong>, el primer largometraje animado por computadora en la historia del cine. Después de varios años de colaboración marcados por varias producciones exitosas, <strong>Disney</strong> adquirió el estudio en 2006. Su filmografía, producida con su propio software RenderMan, incluye algunas de las películas animadas más exitosas y elogiadas de todos los tiempos. Asimismo el equipo de Pixar ha recibido varios premios por sus logros técnicos en el cine de animación.</p>
+        <p>Para la producción de sus largometrajes el personal del estudio desarrolló la metodología <em>Pixar Braintrust</em> que han destinado para la comunicación, supervisión y seguimiento del equipo involucrado en una película. <span>Además de sus producciones cinematográficas, otros productos de Pixar incluyen videojuegos, programas de televisión, software de animación y anuncios comerciales.</span>
+        </p>
         <article class="secundario">
             <div>
                 <a href="#">
@@ -50,11 +61,23 @@
             </div>
         </article>
     </section>
+    <br><br><hr/>
     <footer>
         <img src="images/redes/facebook.png" alt="Facebook">
         <img src="images/redes/twitter.png" alt="Twitter">
         <img src="images/redes/youtube.png" alt="Youtube">
         <img src="images/redes/instagram.png" alt="Instagram">
     </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("navegador");
+          if (x.className === "") {
+            x.className += "responsive";
+          } else {
+            x.className = "";
+          }
+}
+
+    </script>
 </body>
 </html>
